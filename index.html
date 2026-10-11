@@ -5,100 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deepak Wadhwa Official</title>
     
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2329124544488140');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2329124544488140&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2329124544488140');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2329124544488140&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
     <style>
         :root {
-            --bg-color: #0b0f17;
-            --card-bg: #111827;
-            --card-inner: #1f293d;
-            --primary-blue: #0088cc;
-            --primary-hover: #0077b5;
-            --accent-green: #22c55e;
-            --text-main: #ffffff;
-            --text-muted: #94a3b8;
-            --border-color: #1e293b;
+            --bg-base: #06090e;
+            --surface-card: rgba(15, 23, 42, 0.75);
+            --surface-item: rgba(30, 41, 59, 0.65);
+            --border-glow: rgba(56, 189, 248, 0.18);
+            --primary-accent: #0088cc;
+            --primary-gradient: linear-gradient(135deg, #0284c7 0%, #0088cc 50%, #0369a1 100%);
+            --profit-green: #10b981;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
         }
 
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+            -webkit-tap-highlight-color: transparent;
         }
 
         body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
+            background-color: var(--bg-base);
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(2, 132, 199, 0.18) 0%, transparent 60%),
+                radial-gradient(circle at 80% 90%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+            color: var(--text-primary);
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            padding: 12px;
+            padding: 16px;
         }
 
         .container {
             width: 100%;
-            max-width: 390px;
-            background: var(--card-bg);
-            border-radius: 20px;
-            padding: 20px 16px;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            background: var(--surface-card);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 24px 18px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 24px rgba(2, 132, 199, 0.1);
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
 
-        /* Top Header Badges */
         .header-top {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
         }
 
         .channel-tag {
-            border: 1px solid #1e3a8a;
-            color: #60a5fa;
-            font-size: 10px;
+            background: rgba(2, 132, 199, 0.12);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            color: #38bdf8;
+            font-size: 11px;
             font-weight: 700;
-            padding: 4px 10px;
-            border-radius: 20px;
-            letter-spacing: 0.5px;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
         }
 
-        .tg-icon-top {
-            width: 28px;
-            height: 28px;
-            background: #1e293b;
+        .tg-badge-top {
+            width: 30px;
+            height: 30px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--primary-blue);
-            font-size: 14px;
+            color: #38bdf8;
         }
 
-        /* Profile */
-        .profile-wrapper {
+        .profile-container {
             position: relative;
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 8px;
+            width: 88px;
+            height: 88px;
+            margin: 0 auto 12px;
         }
 
         .profile-img {
@@ -106,190 +115,213 @@ src="https://www.facebook.com/tr?id=2329124544488140&ev=PageView&noscript=1"
             height: 100%;
             border-radius: 50%;
             object-fit: cover;
-            border: 2px solid #a855f7;
+            border: 2px solid #38bdf8;
+            box-shadow: 0 0 16px rgba(56, 189, 248, 0.35);
         }
 
         .online-dot {
             position: absolute;
             bottom: 4px;
             right: 4px;
-            width: 12px;
-            height: 12px;
-            background: var(--accent-green);
-            border: 2px solid var(--card-bg);
+            width: 14px;
+            height: 14px;
+            background: var(--profit-green);
+            border: 2.5px solid #0f172a;
             border-radius: 50%;
         }
 
         h1 {
-            font-size: 20px;
-            font-weight: 700;
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: -0.3px;
         }
 
         .official-tag {
-            font-size: 10px;
-            color: var(--text-muted);
-            letter-spacing: 1px;
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            letter-spacing: 1.5px;
+            margin-top: 2px;
             margin-bottom: 12px;
         }
 
-        /* Status Badge */
         .status-badge {
             display: inline-flex;
             align-items: center;
-            gap: 6px;
-            border: 1px solid #14532d;
-            background: rgba(22, 101, 52, 0.2);
-            color: #4ade80;
+            gap: 7px;
+            background: rgba(16, 185, 129, 0.12);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: #34d399;
             font-size: 12px;
-            padding: 5px 14px;
-            border-radius: 20px;
-            margin-bottom: 14px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            margin-bottom: 16px;
         }
 
-        .dot {
-            width: 6px;
-            height: 6px;
-            background: var(--accent-green);
+        .pulse-dot {
+            width: 7px;
+            height: 7px;
+            background: var(--profit-green);
             border-radius: 50%;
+            box-shadow: 0 0 8px var(--profit-green);
+            animation: pulseGlow 1.8s infinite;
         }
 
-        /* Section Titles */
-        .section-title {
+        @keyframes pulseGlow {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1.3); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.8; }
+        }
+
+        /* High-converting CTA Button */
+        .btn-cta {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            background: var(--primary-gradient);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 14px;
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(0, 136, 204, 0.45);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            cursor: pointer;
+        }
+
+        .btn-cta:active {
+            transform: scale(0.98);
+        }
+
+        .btn-cta svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        .section-label {
             text-align: left;
-            font-size: 10px;
+            font-size: 11px;
             font-weight: 700;
-            color: var(--text-muted);
+            color: var(--text-secondary);
             letter-spacing: 1px;
-            margin: 14px 0 8px;
+            margin: 18px 0 10px;
+            text-transform: uppercase;
         }
 
-        /* At A Glance Grid */
-        .glance-grid {
+        /* 3-Column Metric Box */
+        .metrics-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
             gap: 8px;
-            margin-bottom: 8px;
         }
 
-        .glance-box {
-            background: var(--card-inner);
-            padding: 10px 4px;
-            border-radius: 10px;
-            border: 1px solid var(--border-color);
+        .metric-card {
+            background: var(--surface-item);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 12px 6px;
+            border-radius: 14px;
         }
 
-        .glance-title {
-            font-size: 13px;
+        .metric-val {
+            font-size: 14px;
             font-weight: 700;
         }
 
-        .glance-sub {
-            font-size: 9px;
-            color: var(--text-muted);
+        .metric-lbl {
+            font-size: 10px;
+            font-weight: 600;
+            color: var(--text-secondary);
             margin-top: 2px;
         }
 
-        .text-green { color: #4ade80; }
+        .accent-green {
+            color: #34d399;
+        }
 
-        /* What You Get List */
+        /* Value Proposition List */
         .feature-card {
-            background: var(--card-inner);
-            border: 1px solid var(--border-color);
-            padding: 10px 12px;
-            border-radius: 12px;
+            background: var(--surface-item);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 14px;
+            padding: 12px 14px;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 14px;
             margin-bottom: 8px;
             text-align: left;
         }
 
-        .feature-icon {
-            width: 32px;
-            height: 32px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 8px;
+        .feature-icon-box {
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 16px;
+            font-size: 17px;
+            flex-shrink: 0;
         }
 
-        .feature-info h4 {
-            font-size: 13px;
-            font-weight: 600;
+        .feature-meta h4 {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: #ffffff;
         }
 
-        .feature-info p {
-            font-size: 10px;
-            color: var(--text-muted);
+        .feature-meta p {
+            font-size: 11px;
+            color: var(--text-secondary);
+            margin-top: 1px;
         }
 
-        /* CTA Buttons */
-        .btn-cta {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            width: 100%;
-            background: var(--primary-blue);
-            color: white;
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 600;
-            padding: 12px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 136, 204, 0.4);
-            transition: 0.2s;
-        }
-
-        .btn-cta:hover {
-            background: var(--primary-hover);
-        }
-
-        .btn-top {
-            margin-bottom: 6px;
-        }
-
-        .btn-bottom {
-            margin-top: 14px;
+        .cta-bottom-wrap {
+            margin-top: 16px;
         }
 
         .cta-footer {
             display: flex;
             justify-content: space-between;
             font-size: 10px;
-            color: var(--text-muted);
-            margin-top: 8px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-top: 9px;
             padding: 0 4px;
         }
 
-        /* Footer Links */
         .footer-links {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 6px;
-            font-size: 10px;
-            margin-top: 16px;
-            border-top: 1px solid var(--border-color);
-            padding-top: 12px;
+            gap: 8px;
+            font-size: 11px;
+            margin-top: 18px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 14px;
         }
 
         .footer-links a {
-            color: var(--text-muted);
+            color: var(--text-secondary);
             text-decoration: none;
             cursor: pointer;
+            transition: color 0.2s ease;
         }
 
         .footer-links a:hover {
-            color: var(--text-main);
+            color: #38bdf8;
         }
 
         .copyright {
-            font-size: 9px;
+            font-size: 10px;
             color: #64748b;
-            margin-top: 6px;
+            margin-top: 8px;
         }
 
         /* Modal Styles */
@@ -300,120 +332,131 @@ src="https://www.facebook.com/tr?id=2329124544488140&ev=PageView&noscript=1"
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(4px);
             justify-content: center;
             align-items: center;
             z-index: 1000;
-            padding: 15px;
+            padding: 16px;
         }
 
         .modal-content {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            color: var(--text-main);
-            padding: 16px;
-            border-radius: 12px;
+            background: #0f172a;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: var(--text-primary);
+            padding: 20px;
+            border-radius: 18px;
             max-width: 360px;
             width: 100%;
             max-height: 80vh;
             overflow-y: auto;
             text-align: left;
-            font-size: 12px;
-            line-height: 1.4;
+            font-size: 12.5px;
+            line-height: 1.5;
             position: relative;
         }
 
         .modal-content h2 {
-            font-size: 15px;
+            font-size: 16px;
             margin-bottom: 8px;
-            color: var(--primary-blue);
+            color: #38bdf8;
         }
 
         .close-btn {
             position: absolute;
-            top: 8px;
-            right: 12px;
-            font-size: 18px;
+            top: 12px;
+            right: 14px;
+            font-size: 20px;
             cursor: pointer;
-            color: var(--text-muted);
+            color: var(--text-secondary);
         }
     </style>
-    
 </head>
 <body>
 
     <div class="container">
         <div class="header-top">
-            <span class="channel-tag">TELEGRAM CHANNEL</span>
-            <div class="tg-icon-top">✈</div>
+            <span class="channel-tag">Telegram Channel</span>
+            <div class="tg-badge-top">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/>
+                </svg>
+            </div>
         </div>
 
-        <div class="profile-wrapper">
+        <div class="profile-container">
             <img src="Deepak.jpg" alt="Deepak Wadhwa" class="profile-img">
             <span class="online-dot"></span>
         </div>
         <h1>Deepak Wadhwa</h1>
-        <div class="official-tag">OFFICIAL™</div>
+        <div class="official-tag">OFFICIAL COMMUNITY</div>
 
         <div class="status-badge">
-            <span class="dot"></span> Available · Free to Join
+            <span class="pulse-dot"></span> Available · Free to Join
         </div>
 
-        <!-- Top CTA with Subscribe Tracking Event -->
-        <a href="https://t.me/+8x6MG3HhoktmZmI1" class="btn-cta btn-top" onclick="fbq('track', 'Subscribe');">
-            ✈ Join Telegram Community
+        <!-- Top CTA -->
+        <a href="https://t.me/+8x6MG3HhoktmZmI1" class="btn-cta" onclick="fbq('track', 'Subscribe');">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/>
+            </svg>
+            Join Telegram Channel
         </a>
 
-        <div class="section-title">AT A GLANCE</div>
-        <div class="glance-grid">
-            <div class="glance-box">
-                <div class="glance-title">Daily</div>
-                <div class="glance-sub">LEARNING</div>
+        <div class="section-label">At A Glance</div>
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-val">Daily</div>
+                <div class="metric-lbl">Analysis</div>
             </div>
-            <div class="glance-box">
-                <div class="glance-title">Live</div>
-                <div class="glance-sub">ALERTS</div>
+            <div class="metric-card">
+                <div class="metric-val">Real-Time</div>
+                <div class="metric-lbl">Alerts</div>
             </div>
-            <div class="glance-box">
-                <div class="glance-title text-green">Free</div>
-                <div class="glance-sub">ACCESS</div>
+            <div class="metric-card">
+                <div class="metric-val accent-green">100% Free</div>
+                <div class="metric-lbl">Access</div>
             </div>
         </div>
 
-        <div class="section-title">WHAT YOU GET</div>
+        <div class="section-label">What You Get</div>
         
         <div class="feature-card">
-            <div class="feature-icon">📊</div>
-            <div class="feature-info">
+            <div class="feature-icon-box">📊</div>
+            <div class="feature-meta">
                 <h4>Market Analysis</h4>
-                <p>Educational stats & market insights</p>
+                <p>Nifty, BankNifty & stock breakdowns</p>
             </div>
         </div>
 
         <div class="feature-card">
-            <div class="feature-icon">⚡</div>
-            <div class="feature-info">
-                <h4>Live Alerts</h4>
-                <p>Instant Telegram notifications</p>
+            <div class="feature-icon-box">⚡</div>
+            <div class="feature-meta">
+                <h4>Instant Setup Alerts</h4>
+                <p>Real-time market move notifications</p>
             </div>
         </div>
 
         <div class="feature-card">
-            <div class="feature-icon">🏆</div>
-            <div class="feature-info">
-                <h4>Market Strategy</h4>
-                <p>Educational guidance & support</p>
+            <div class="feature-icon-box">🎯</div>
+            <div class="feature-meta">
+                <h4>Educational Strategy</h4>
+                <p>High-probability setups & trade logic</p>
             </div>
         </div>
 
-        <!-- Bottom CTA with Subscribe Tracking Event -->
-        <a href="https://t.me/+8x6MG3HhoktmZmI1" class="btn-cta btn-bottom" onclick="fbq('track', 'Subscribe');">
-            ✈ Join Telegram Community
-        </a>
-
-        <div class="cta-footer">
-            <span class="text-green">● Members active now</span>
-            <span>Free forever</span>
+        <!-- Bottom CTA -->
+        <div class="cta-bottom-wrap">
+            <a href="https://t.me/+8x6MG3HhoktmZmI1" class="btn-cta" onclick="fbq('track', 'Subscribe');">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/>
+                </svg>
+                Join Telegram Community
+            </a>
+            <div class="cta-footer">
+                <span class="accent-green">● 1,240+ Active traders</span>
+                <span>Free forever</span>
+            </div>
         </div>
 
         <div class="footer-links">
@@ -425,7 +468,7 @@ src="https://www.facebook.com/tr?id=2329124544488140&ev=PageView&noscript=1"
         </div>
 
         <div class="copyright">
-            © 2026 Deepak Wadhwa Official™. Free channel
+            © 2026 Deepak Wadhwa Official™. For educational purposes only.
         </div>
     </div>
 
